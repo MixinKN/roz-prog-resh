@@ -4,8 +4,9 @@ import ArticlesList from "../src/ArticlesList";
 import {apiClient} from "../src/ApiClient";
 import {MOCK_ARTICLES, MOCK_PROJECTS} from "../src/mock";
 import Typography from "@mui/material/Typography";
-import ProjectCard from "../src/ProjectCard";
 import ProjectsList from "../src/ProjectsList";
+import Intro from "../src/Intro";
+import ControlledAccordions from "../src/acordion";
 
 export async function getServerSideProps() {
     try {
@@ -20,10 +21,12 @@ export async function getServerSideProps() {
 export default function Home({articles,projects}) {
   return (
       <Container maxWidth="lg">
-          <Typography sx={{paddingTop:"60px",paddingBottom:"40px"}} component={"h1"} variant={"h2"}>Блог</Typography>
+          <Intro/>
+          <Typography sx={{paddingTop:"60px",paddingBottom:"40px"}} component={"h2"} variant={"h2"}>Блог</Typography>
           <ArticlesList itemsLimit={3} articles={articles}/>
-          <Typography sx={{paddingTop:"60px",paddingBottom:"40px"}} component={"h1"} variant={"h2"}>Проекты</Typography>
+          <Typography sx={{paddingTop:"60px",paddingBottom:"40px"}} component={"h2"} variant={"h2"}>Проекты</Typography>
           <ProjectsList itemsLimit={3} projects={projects}/>
+          <ControlledAccordions />
       </Container>
   );
 }

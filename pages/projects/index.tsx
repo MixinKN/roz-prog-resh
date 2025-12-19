@@ -19,7 +19,7 @@ const Projects = ({projects}) => {
     return (
         <>
             <Container maxWidth="lg">
-                <Typography sx={{paddingTop:"60px",paddingBottom:"40px"}} component={"h1"} variant={"h2"}>Проекты</Typography>
+                <Typography sx={{paddingTop:"60px",paddingBottom:"40px"}} component={"h2"} variant={"h2"}>Проекты</Typography>
                 <ProjectsList projects={projects}/>
             </Container>
         </>
