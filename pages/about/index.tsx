@@ -3,7 +3,6 @@ import Container from "@mui/material/Container";
 import Intro from "../../src/Intro";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import Accordion from "@mui/material/Accordion";
 import ControlledAccordions from "../../src/acordion";
 
 const About = () => {
