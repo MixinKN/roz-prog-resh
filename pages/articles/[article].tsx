@@ -15,7 +15,7 @@ export async function getServerSideProps(context) {
 
 const Article = ({article}) => {
     return (
-        <Container maxWidth={"lg"}>
+        <Container sx={{marginBottom:"60px"}} maxWidth={"lg"}>
             <Typography sx={{paddingTop:"60px",paddingBottom:"40px"}} variant="h2" component="h1">
                 {article.data.attributes.title}
             </Typography>

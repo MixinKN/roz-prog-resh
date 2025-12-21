@@ -15,7 +15,7 @@ export default function ControlledAccordions() {
         };
 
     return (
-        <Box sx={{marginTop:"60px",marginBottom:"120px"}}>
+        <Box id="servises" sx={{marginTop:"60px",marginBottom:"120px"}}>
             <Typography component="h2" variant="h2" sx={{marginBottom:"20px"}}>Услуги</Typography>
             <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
                 <AccordionSummary

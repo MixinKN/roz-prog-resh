@@ -16,11 +16,11 @@ import SearchIcon from '@mui/icons-material/Search';
 
 const pages = [
     {
-        link:"/#about",
+        link:"#about",
         name:"О компании",
     },
     {
-        link:"/#servises",
+        link:"#servises",
         name:"Услуги",
     },
     {
@@ -104,7 +104,7 @@ function AppFooter() {
                         variant="h6"
                         noWrap
                         component="a"
-                        href="#app-bar-with-responsive-menu"
+                        href="/"
                         sx={{
                             mr: 2,
                             display: { xs: 'none', md: 'flex' },

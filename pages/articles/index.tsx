@@ -18,7 +18,7 @@ export async function getServerSideProps() {
 const Articles = ({articles}) => {
     return (
         <>
-            <Container maxWidth="lg">
+            <Container sx={{marginBottom:"60px"}} maxWidth="lg">
                 <Typography sx={{paddingTop:"60px",paddingBottom:"40px"}} component={"h2"} variant={"h2"}>Блог</Typography>
                 <ArticlesList articles={articles}/>
             </Container>
